@@ -1,0 +1,31 @@
+﻿<Window x:Class="CA2_Programming.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CA2_Programming"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.513,0.488">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="714*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="305*"/>
+            <RowDefinition Height="114*"/>
+        </Grid.RowDefinitions>
+        <RadioButton x:Name="allRbtn" Content="All" HorizontalAlignment="Left" Margin="31,108,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="landRbtn" Content="Land" HorizontalAlignment="Left" Margin="31,143,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="waterRbtn" Content="Water" HorizontalAlignment="Left" Margin="31,175,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="airRbtn" Content="Air" HorizontalAlignment="Left" Margin="31,210,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="182" Margin="48.5,108,0,0" VerticalAlignment="Top" Width="213" Grid.Column="1"/>
+        <TextBox x:Name="descriptionBox" HorizontalAlignment="Left" Height="23" Margin="48.5,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <TextBlock x:Name="textblock" HorizontalAlignment="Left" Margin="48.5,28,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="60" Width="213" Grid.Column="1"/>
+        <ListBox x:Name="listbox2" HorizontalAlignment="Left" Height="182" Margin="434.5,108,0,0" VerticalAlignment="Top" Width="202" Grid.Column="1"/>
+        <TextBox x:Name="txtbox2" HorizontalAlignment="Left" Height="23" Margin="434.5,68,0,0" TextWrapping="Wrap" Text="Selected Activities" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="btn1" Content="&lt; &lt;" HorizontalAlignment="Left" Margin="314.5,143,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <Button x:Name="btn2" Content="&gt; &gt;" HorizontalAlignment="Left" Margin="314.5,240,0,0" VerticalAlignment="Top" Width="75" Click="Btn2_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
